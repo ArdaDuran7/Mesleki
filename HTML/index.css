@@ -1,0 +1,11 @@
+div {
+    padding: 15px 0px 15px 15px;
+    background-color: whitesmoke;
+    border: solid red;
+}
+
+body { 
+    font-size: 20px;
+    border: insent 5px black;
+    background-color: blue;
+}
