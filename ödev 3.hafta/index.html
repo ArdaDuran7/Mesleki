@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ağaoğlu Mobilya</title>
+  <link rel="stylesheet" href="mobilya.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="logo-baslik">
+        <a href="index.html">
+          <img src="logo.png" alt="Ağaoğlu Mobilya Logo" class="logo">
+        </a>
+        <h1>Ağaoğlu Mobilya</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="yatak-odasi.html">Yatak Odası</a></li>
+          <li><a href="oturma-odasi.html">Oturma Odası</a></li>
+          <li><a href="mutfak.html">Mutfak Masası</a></li>
+          <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="slider-container">
+      <div class="slider-content" id="sliderContent">
+        <div class="slide active">
+          <img src="https://via.placeholder.com/800x300/ff7f50/ffffff?text=%C4%B0lkbahar+%C4%B0ndirimi+%25+30" alt="İlkbahar İndirimi">
+          <div class="caption">
+            <h3>İlkbahar İndirimi</h3>
+            <p>Tüm yatak odası takımlarında %30 indirim!</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="https://via.placeholder.com/800x300/4682b4/ffffff?text=Yeni+Koleksiyon+2025" alt="Yeni Koleksiyon">
+          <div class="caption">
+            <h3>Yeni Koleksiyon</h3>
+            <p>Modern tasarımlar sizlerle!</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="https://via.placeholder.com/800x300/32cd32/ffffff?text=Bahara+%C3%96zel+Kampanya" alt="Bahara Özel">
+          <div class="caption">
+            <h3>Bahara Özel</h3>
+            <p>5000 TL ve üzeri alışverişe ücretsiz kargo!</p>
+          </div>
+        </div>
+      </div>
+      <button class="slider-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+      <button class="slider-btn next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+    <h2>Modern ve Şık Mobilyalar</h2>
+    <p>Ev dekorasyonuna tarz katmak isteyenler için en uygun seçimler burada!</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ağaoğlu Mobilya</p>
+  </footer>
+
+  <script src="mobilya.js"></script>
+</body>
+</html>

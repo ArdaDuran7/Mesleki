@@ -1,0 +1,269 @@
+/* Genel Ayarlar */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background-color: #ff9800;
+    color: white;
+    padding: 25px 10px;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 36px;
+    letter-spacing: 1px;
+  }
+  
+  /* Navigasyon */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+  }
+  
+  /* Ana İçerik */
+  main {
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  main h2 {
+    color: #ff9800;
+    margin-bottom: 20px;
+  }
+  
+  /* Slider */
+  .slider-container {
+    position: relative;
+    max-width: 900px;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.2);
+  }
+  
+  .slider-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+    display: none;
+    position: relative;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  
+  .slide img {
+    width: 100%;
+    border-radius: 12px;
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 50%;
+  }
+  
+  .slider-btn:hover {
+    background-color: rgba(0,0,0,0.7);
+  }
+  
+  .slider-btn.prev {
+    left: 15px;
+  }
+  
+  .slider-btn.next {
+    right: 15px;
+  }
+  
+  /* Ürünler Alt Alta */
+  .urunler {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .urun {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.3s;
+  }
+  
+  .urun:hover {
+    transform: scale(1.02);
+  }
+  
+  .urun img {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .urun-info {
+    text-align: left;
+  }
+  
+  .urun h3 {
+    font-size: 20px;
+    margin: 0 0 10px;
+    color: #ff9800;
+  }
+  
+  .urun p {
+    color: #444;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* İletişim Formu */
+  form {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  form input,
+  form textarea {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  form textarea {
+    resize: none;
+  }
+  
+  form button {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #ff9800;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+  }
+/* Header ve Logo Düzeni */
+header {
+    background-color: #ff9800;
+    padding: 20px 10px;
+  }
+  
+  .header-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .logo-baslik {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .logo {
+    height: 60px;
+    width: auto;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: white;
+  }
+  
+  /* Menü Ayarları */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 25px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ffcc00;
+  }
+    
